@@ -23,7 +23,7 @@ dependencies {
 group = "edu.cmu.cs.db"
 version = "1.0-SNAPSHOT"
 description = "calcite_app"
-java.sourceCompatibility = JavaVersion.VERSION_1_8
+java.sourceCompatibility = JavaVersion.VERSION_11
 
 tasks.withType<JavaCompile> {
     options.compilerArgs.add("-Xlint:deprecation")
