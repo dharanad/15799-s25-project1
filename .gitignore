@@ -30,3 +30,4 @@ data/
 duckdb
 *.db
 *.tgz
+queries/
