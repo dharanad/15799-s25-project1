@@ -43,7 +43,8 @@ public class App
     public static void main(String[] args) throws Exception
     {
         final CalciteQueryProcessor calciteQueryProcessor = new CalciteQueryProcessor("cmu.db");
-        calciteQueryProcessor.processSql("SELECT * FROM orders LIMIT 10");
+        calciteQueryProcessor.processSql2("SELECT o_custkey FROM orders where o_totalprice > 1024");
+
         if (args.length == 0) {
             System.out.println("Usage: java -jar App.jar <arg1> <arg2>");
             return;
